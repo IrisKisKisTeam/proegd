@@ -31,7 +31,7 @@ const anchors = document.querySelectorAll(".header__nav a");
 
 anchors.forEach(anc => {
   anc.addEventListener("click", function (event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     const id = anc.getAttribute("href");
     const elem = document.querySelector(id);
