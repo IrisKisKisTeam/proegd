@@ -37,6 +37,10 @@ p {
   color: #676770;
 }
 
+.burger {
+  display: none;
+}
+
 .subtitle {
   font-size: 17px;
   line-height: 1.2;
@@ -466,7 +470,40 @@ p {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1000;
+  }
+
+  .burger-nav {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .burger p {
+    font-size: 24px !important;
+  }
+  
+  .title-meow {
+    line-height: 1.2 !important;
+  }
+
   .header__nav li+li {
     margin-left: 15px;
   }
